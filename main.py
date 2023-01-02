@@ -7,6 +7,6 @@ class UserInfo(BaseModel):
    contact : int
     
 
-@app.post("/hello")
+@app.get("/hello")
 async def hello(detail:UserInfo):
     return "Hello World"
