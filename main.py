@@ -5,8 +5,13 @@ app = FastAPI()
 class UserInfo(BaseModel):
    name : int
    contact : int
+   
+class Senetenec(BaseModel):
+   sentence : str
+   
     
 
-@app.get("/hello")
+@app.get("/hello") 
 async def hello(detail:UserInfo):
     return "Hello World"
+ 
