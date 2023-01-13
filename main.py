@@ -6,12 +6,16 @@ class UserInfo(BaseModel):
    name : int
    contact : int
    
-class Senetenec(BaseModel):
+class Sentence(BaseModel):
    sentence : str
    
-    
 
 @app.get("/hello") 
 async def hello(detail:UserInfo):
     return "Hello World"
+ 
+@app.get("/sentimental-analysis")
+async def sentimental_analysis(query:Sentence):
+   result = ""
+   return result
  
