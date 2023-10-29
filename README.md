@@ -2,6 +2,5 @@
 
 API using NLP and FastAPI for sentimental analysis
 
-## Run Project 
 
 
